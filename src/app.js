@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast')
 
 
 const app=express()
+const port = process.env.PORT || 3000
 const publicPath =path.join(__dirname, '../public')
 const viewpath = path.join(__dirname, '../templates/views')
 const partialPath = path.join(__dirname,'../templates/partials' )
@@ -78,6 +79,6 @@ app.get('/products',(req,res) =>{
     }) 
 })
 
-app.listen(3000,()=> {
+app.listen(port,()=> {
     console.log('running')
 })
