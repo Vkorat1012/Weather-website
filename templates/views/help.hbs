@@ -1,10 +1,20 @@
+<!DOCTYPE html>
+
 <html>
-    <head></head>
+
+<head>
+    <title>Help</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
 
 <body>
-    {{>header}}
-    <h1>This is help page.</h1>
+    <div class="main-content">
+        {{>header}}
+        <p>{{helpText}}</p>
+    </div>
+    
+    {{>footer}}
+</body>
 
-    <p>check that is it work on mobile or not </p>
-</body>    
 </html>
